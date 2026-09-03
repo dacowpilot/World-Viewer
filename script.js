@@ -194,17 +194,6 @@ document.querySelector("#search-button").addEventListener("click", searchPlace);
 document.querySelector("#search-input").addEventListener("keydown", (event) => {
   if (event.key === "Enter") searchPlace();
 });
-document.querySelector("#locate-button").addEventListener("click", () => {
-  if (!navigator.geolocation) return setFeed("Location is not supported");
-  navigator.geolocation.getCurrentPosition(
-    ({ coords }) => map.flyTo([coords.latitude, coords.longitude], 9),
-    () => setFeed("Location permission unavailable"),
-  );
-});
-document.querySelector("#fullscreen-button").addEventListener("click", () => {
-  document.querySelector(".map-stage").requestFullscreen?.();
-});
-
 async function showWeather() {
   const { lat, lng } = map.getCenter();
   const weatherReadout = document.querySelector("#weather-readout");
