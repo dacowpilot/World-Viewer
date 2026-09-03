@@ -4,9 +4,16 @@
   
 An interactive viewer for near-real-time NASA VIIRS satellite imagery.
 
+# Features
+* Location search
+* recent satellite imagery
+* top bar with zoom/date info
+* iss tracker
+* weather for location
+
 # How to use (demo)
 
-you can use it by just opening this link in your browser: 
+you can use it by just opening this link in your browser: https://dacowpilot.github.io/World-Viewer/
 
 # Data
 
